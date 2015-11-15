@@ -2,7 +2,7 @@
   "name": "jscow-button",
   "description": "jsCow - Button - Javascript Component Framework",
   "version": "1.0.0",
-  "license": "GNU",
+  "license": "GPL-3.0+",
   "readme": "README.md",
   "author": "Mario Linz <jscow@gmx.de>",
   "contributors": [
