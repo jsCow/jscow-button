@@ -11,7 +11,7 @@ npm install
 
 `jscow-button` needs the following libraries:
 
-* [jsCow](https://github.com/jsCow/jsCow)
+* [jsCow](https://github.com/jsCow/jsCow) the core of jsCow
 
 
 ## License
