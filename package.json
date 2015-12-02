@@ -20,7 +20,14 @@
     "grunt-contrib-watch": "latest",
     "grunt-contrib-uglify": "latest",
     "grunt-contrib-compress": "latest",
-    "grunt-contrib-jshint": "latest"
+    "grunt-contrib-concat": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-contrib-yuidoc": "latest",
+    "bootstrap": "latest",
+    "font-awesome": "latest",
+    "jscow": "latest",
+    "jscow-theme": "latest",
+    "jquery": "latest"
   },
   "repository": {
     "type": "git",

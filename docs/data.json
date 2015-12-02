@@ -1,0 +1,310 @@
+{
+    "project": {
+        "name": "jscow-button",
+        "description": "jsCow - Button - Javascript Component Framework",
+        "version": "1.0.0",
+        "url": ""
+    },
+    "files": {
+        "src\\jscow\\components\\button.js": {
+            "name": "src\\jscow\\components\\button.js",
+            "modules": {},
+            "classes": {
+                "jsCow.res.components.button": 1,
+                "jsCow.res.model.button": 1,
+                "jsCow.res.view.button": 1,
+                "jsCow.res.controller.button": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        }
+    },
+    "modules": {},
+    "classes": {
+        "jsCow.res.components.button": {
+            "name": "jsCow.res.components.button",
+            "shortname": "jsCow.res.components.button",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src\\jscow\\components\\button.js",
+            "line": 1,
+            "description": "jsCow button component is a reusable component used in client side jsCow applications. \nA button is a component, which enables users to interact with an application.",
+            "author": "Mario Linz <jscow@gmx.de>",
+            "type": "Class Provides the main class of the component",
+            "is_constructor": 1
+        },
+        "jsCow.res.model.button": {
+            "name": "jsCow.res.model.button",
+            "shortname": "jsCow.res.model.button",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src\\jscow\\components\\button.js",
+            "line": 109,
+            "description": "Represents the model class of the jsCow button component.",
+            "author": "Mario Linz <jscow@gmx.de>",
+            "type": "Class Provides the model class of the component",
+            "is_constructor": 1
+        },
+        "jsCow.res.view.button": {
+            "name": "jsCow.res.view.button",
+            "shortname": "jsCow.res.view.button",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src\\jscow\\components\\button.js",
+            "line": 161,
+            "description": "Represents the view class of the jsCow button component.",
+            "author": "Mario Linz <jscow@gmx.de>",
+            "type": "Class Provides the view class of the component",
+            "is_constructor": 1
+        },
+        "jsCow.res.controller.button": {
+            "name": "jsCow.res.controller.button",
+            "shortname": "jsCow.res.controller.button",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src\\jscow\\components\\button.js",
+            "line": 380,
+            "description": "Represents the controller class of the jsCow button component.",
+            "author": "Mario Linz <jscow@gmx.de>",
+            "type": "Class Provides the controller class of the component",
+            "is_constructor": 1
+        }
+    },
+    "elements": {},
+    "classitems": [
+        {
+            "file": "src\\jscow\\components\\button.js",
+            "line": 14,
+            "description": "The init method will be called by initializing the component. \nThe model, view and controller should be set within this method.\n\t\t\n\t\tthis.addController(jsCow.res.controller.button);\n\t\tthis.addModel(jsCow.res.model.button);\n\t\tthis.addView(jsCow.res.view.button);",
+            "itemtype": "method",
+            "name": "init",
+            "access": "public",
+            "tagname": "",
+            "return": {
+                "description": "Instance of the component itself.",
+                "type": "Object"
+            },
+            "class": "jsCow.res.components.button"
+        },
+        {
+            "file": "src\\jscow\\components\\button.js",
+            "line": 35,
+            "description": "This method is a user interaction method to set the button text.\n\t  \t\n\t  \t// New button instance with a default text\n\t  \tvar btn = jsCow.get(jsCow.res.components.button, { \n\t  \t\ttext: 'Default button text' \n\t  \t);\n\n\t  \t// Set button text by method\n\t  \tbtn.text('My button text');",
+            "itemtype": "method",
+            "name": "text",
+            "params": [
+                {
+                    "name": "text",
+                    "description": "Text of the button.",
+                    "type": "String"
+                }
+            ],
+            "access": "public",
+            "tagname": "",
+            "return": {
+                "description": "Instance of the component itself.",
+                "type": "Object"
+            },
+            "class": "jsCow.res.components.button"
+        },
+        {
+            "file": "src\\jscow\\components\\button.js",
+            "line": 63,
+            "description": "This method is a user interaction method to set a button icon.\nThe available icons comes from the icon font 'Font Awesome' and are included in the standard jsCow theme.\n\t\n\t\tvar btn = jsCow.get(jsCow.res.components.button, { \n\t\t\ttext: 'Button', \n\t\t\ticon: {\n\t\t\t\tdirection: 'l',\n\t\t\t\tname: 'user',\n\t\t\t\tprefix: 'fa fa-'\n\t\t\t}\n\t\t});",
+            "itemtype": "method",
+            "name": "icon",
+            "params": [
+                {
+                    "name": "{options}",
+                    "description": "Set the options for the button icon. Implemented directions are 'l' (left) and 'r' (right). The default prefix is a Font Awesome prefix like 'fa fa-'.",
+                    "type": "Object"
+                }
+            ],
+            "access": "public",
+            "tagname": "",
+            "return": {
+                "description": "Instance of the component itself.",
+                "type": "Object"
+            },
+            "class": "jsCow.res.components.button"
+        },
+        {
+            "file": "src\\jscow\\components\\button.js",
+            "line": 120,
+            "description": "JSON object with all model data.\nDefault model data are:\n\t\t\n\t\t{\n\t\t\tenabled: true,\n\t\t\tvisible: true,\n\t\t\ttext: \"\"\n\t\t}",
+            "itemtype": "property",
+            "name": "data",
+            "type": "Object",
+            "class": "jsCow.res.model.button"
+        },
+        {
+            "file": "src\\jscow\\components\\button.js",
+            "line": 144,
+            "description": "The model init method will only trigger the internal component event 'model.ready'.\nThe event data are the model data.\nDefault listener for this event is registered in the controller of the component. \n\t  \t\n\t  \tthis.trigger(\"model.ready\", this.data);",
+            "itemtype": "method",
+            "name": "init",
+            "access": "private",
+            "tagname": "",
+            "class": "jsCow.res.model.button"
+        },
+        {
+            "file": "src\\jscow\\components\\button.js",
+            "line": 172,
+            "description": "Objekt for all needed HTML-DOM elements of the component.",
+            "itemtype": "property",
+            "name": "dom",
+            "type": "Object",
+            "default": "{} Object",
+            "class": "jsCow.res.view.button"
+        },
+        {
+            "file": "src\\jscow\\components\\button.js",
+            "line": 181,
+            "description": "Represents the html main container of the component.",
+            "itemtype": "property",
+            "name": "dom.main",
+            "type": "Object",
+            "default": "<div/> jQuery DIV object",
+            "class": "jsCow.res.view.button"
+        },
+        {
+            "file": "src\\jscow\\components\\button.js",
+            "line": 190,
+            "description": "Represents the inner html container of the component.\nThe button component do not need and not use this property. Therefore its commented out.",
+            "itemtype": "property",
+            "name": "dom.content",
+            "type": "Object",
+            "default": "<div/> jQuery DIV object",
+            "class": "jsCow.res.view.button"
+        },
+        {
+            "file": "src\\jscow\\components\\button.js",
+            "line": 203,
+            "description": "The view init method can used to set default view properties.\nBy trigger the event 'model.ready' the controller will trigger the event 'view.init' to call this method.\nThis method register all jquery events for mouseover, mouseout, press, pressed and click on the button component. \n\t  \t\n\t  \t// For example\n\t  \tthis.trigger(\"mouseover\");\n\t  \tthis.trigger(\"mouseout\");\n\t  \tthis.trigger(\"press\");\n\t  \tthis.trigger(\"pressed\");\n\t  \tthis.trigger(\"click\");\n\t\t\n\t\t// The view init will be triggered by the controller\n\t  \tthis.trigger(\n\t  \t\t\"view.init\", \n\t  \t\tthis.cmp().config()\n\t  \t);",
+            "itemtype": "method",
+            "name": "init Set all jquery events and trigger the component event 'view.update'.",
+            "class": "jsCow.res.view.button"
+        },
+        {
+            "file": "src\\jscow\\components\\button.js",
+            "line": 224,
+            "description": "Will be triggert when the mouse cursor is moved over the component view.",
+            "itemtype": "event",
+            "name": "mouseover",
+            "class": "jsCow.res.view.button"
+        },
+        {
+            "file": "src\\jscow\\components\\button.js",
+            "line": 228,
+            "description": "Will be triggert when the mouse cursor is leaving the component view.",
+            "itemtype": "event",
+            "name": "mouseout",
+            "class": "jsCow.res.view.button"
+        },
+        {
+            "file": "src\\jscow\\components\\button.js",
+            "line": 232,
+            "description": "Will be triggert when the mouse pointer is over the element, and the mouse button is pressed on the component view.",
+            "itemtype": "event",
+            "name": "press",
+            "class": "jsCow.res.view.button"
+        },
+        {
+            "file": "src\\jscow\\components\\button.js",
+            "line": 236,
+            "description": "Will be triggert when the mouse pointer is over the element, and the mouse button is not more pressed on the component view.",
+            "itemtype": "event",
+            "name": "pressed",
+            "class": "jsCow.res.view.button"
+        },
+        {
+            "file": "src\\jscow\\components\\button.js",
+            "line": 240,
+            "description": "Will be triggert when the user clicked on the component view.",
+            "itemtype": "event",
+            "name": "click",
+            "class": "jsCow.res.view.button"
+        },
+        {
+            "file": "src\\jscow\\components\\button.js",
+            "line": 309,
+            "description": "The view update method will update the complete component view by trigger the event 'view.update' with all available model data.\n\t  \t\n\t  \tthis.trigger(\n\t  \t\t\"view.update\", \n\t  \t\tthis.cmp().config()\n\t  \t);",
+            "itemtype": "method",
+            "name": "update",
+            "params": [
+                {
+                    "name": "eventdata",
+                    "description": "Contains all sent event data",
+                    "type": "Object"
+                }
+            ],
+            "class": "jsCow.res.view.button"
+        },
+        {
+            "file": "src\\jscow\\components\\button.js",
+            "line": 392,
+            "description": "The controller init method register all needed events within the controller and provides all related event handler.\n\n\t  \t// Code examples\n\t  \tthis.on(\"model.ready\", this.isModelReady);\n\t\tthis.on(\"text\", this.text);\n\t\tthis.on(\"icon\", this.icon);",
+            "itemtype": "method",
+            "name": "init",
+            "class": "jsCow.res.controller.button"
+        },
+        {
+            "file": "src\\jscow\\components\\button.js",
+            "line": 410,
+            "description": "The controller isModelReady method is an event handler and will be triggert by the event 'model.ready' with all available model data.\nIs the model ready the 'view.init' event will triggert by this handler with all available model data again.\n\t  \t\n\t  \tthis.trigger(\n\t\t\t\"view.init\", \n\t\t\te.data\n\t\t);",
+            "itemtype": "method",
+            "name": "isModelReady",
+            "params": [
+                {
+                    "name": "eventdata",
+                    "description": "Contains all sent event data",
+                    "type": "Object"
+                }
+            ],
+            "class": "jsCow.res.controller.button"
+        },
+        {
+            "file": "src\\jscow\\components\\button.js",
+            "line": 431,
+            "description": "The controller text method is an event handler and will only set the text for the button.\nThis handler will be triggert by the component specific event 'text'.\n\t  \t\n\t  \tthis.cmp().config({\n\t\t\ttext: e.data.text\n\t\t});",
+            "itemtype": "method",
+            "name": "text",
+            "params": [
+                {
+                    "name": "eventdata",
+                    "description": "Contains all sent event data",
+                    "type": "Object"
+                }
+            ],
+            "class": "jsCow.res.controller.button"
+        },
+        {
+            "file": "src\\jscow\\components\\button.js",
+            "line": 451,
+            "description": "The controller icon method is an event handler and will only set the icon configuration for the button.\nThis handler will be triggert by the component specific event 'icon'.\n\t  \t\n\t  \tthis.cmp().config({\n\t\t\ticon: e.data.icon\n\t\t});\n\n\t\t// Configuration example for the event data\n\t\t{\n\t\t\tdirection: 'l',\n\t\t\tname: 'user',\n\t\t\tprefix: 'fa fa-'\n\t\t}",
+            "itemtype": "method",
+            "name": "icon",
+            "params": [
+                {
+                    "name": "eventdata",
+                    "description": "Contains all sent event data",
+                    "type": "Object"
+                }
+            ],
+            "class": "jsCow.res.controller.button"
+        }
+    ],
+    "warnings": []
+}
