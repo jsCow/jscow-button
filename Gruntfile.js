@@ -143,6 +143,7 @@ module.exports = function(grunt) {
 				],
 				tasks: [
 					'clean',
+					'jshint',
 					'copy',
 					'less',
 					'concat',
@@ -150,6 +151,24 @@ module.exports = function(grunt) {
 					'yuidoc'
 				],
 			}
+		},
+
+		jshint: {
+			options: {
+				curly: true,
+				eqeqeq: true,
+				eqnull: true,
+				browser: true,
+				maxparams: 4,
+				notypeof: true,
+				globals: {
+					jQuery: true
+				}
+			},
+			all: [
+				'src/app/**/*.js',
+				'src/jscow/**/*.js'
+			]
 		},
 
 		yuidoc: {
@@ -169,6 +188,7 @@ module.exports = function(grunt) {
 	});
 	
 	grunt.loadNpmTasks('grunt-contrib-clean');
+	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-contrib-less');
 	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-contrib-concat');
@@ -179,6 +199,7 @@ module.exports = function(grunt) {
 	// Default task(s).
 	grunt.registerTask('default', [
 		'clean',
+		'jshint',
 		'copy',
 		'less',
 		'concat',
