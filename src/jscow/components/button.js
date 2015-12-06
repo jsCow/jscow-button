@@ -8,6 +8,26 @@
   * @constructor 
 */
 
+/**
+  * Will be triggert when the mouse cursor is moved over the component view.
+  * @event mouseover
+  */
+/**
+  * Will be triggert when the mouse cursor is leaving the component view.
+  * @event mouseout
+  */
+/**
+  * Will be triggert when the mouse pointer is over the element, and the mouse button is pressed on the component view.
+  * @event press
+  */
+/**
+  * Will be triggert when the mouse pointer is over the element, and the mouse button is not more pressed on the component view.
+  * @event pressed
+  */
+/**
+  * Will be triggert when the user clicked on the component view.
+  * @event click
+  */
 jsCow.res.components.button = function() {};
 jsCow.res.components.button.prototype = {
 
@@ -221,27 +241,6 @@ jsCow.res.view.button.prototype = {
 	  * @method init Set all jquery events and trigger the component event 'view.update'.
 	  */
 	
-	/**
-	  * Will be triggert when the mouse cursor is moved over the component view.
-	  * @event mouseover
-	  */
-	/**
-	  * Will be triggert when the mouse cursor is leaving the component view.
-	  * @event mouseout
-	  */
-	/**
-	  * Will be triggert when the mouse pointer is over the element, and the mouse button is pressed on the component view.
-	  * @event press
-	  */
-	/**
-	  * Will be triggert when the mouse pointer is over the element, and the mouse button is not more pressed on the component view.
-	  * @event pressed
-	  */
-	/**
-	  * Will be triggert when the user clicked on the component view.
-	  * @event click
-	  */
-
 	init: function(e) {
 		
 		// Hover
